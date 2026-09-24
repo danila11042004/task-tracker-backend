@@ -1,0 +1,4 @@
+jwt:
+  access-token-expiration: 2s
+outbox-event-publisher:
+  enabled: false
