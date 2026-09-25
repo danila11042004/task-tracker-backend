@@ -9,6 +9,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    env:
+      KAFKA_SENDING_EMAIL_TOPIC: TEST_TOPIC
+      JWT_SECRET: ${{ secrets.JWT_SECRET }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
